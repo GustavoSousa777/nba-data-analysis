@@ -56,8 +56,12 @@ nba-data-analysis/
 ├── assets/
 │   └── dashboard_demo.mp4  
 │   └── dashboard.png
+│
 ├── data/
 │   └── nba_data_processed.csv       # Dataset
+│
+├── database/
+│   └── schema.sql
 │
 ├── src/
 │   └── analysis.py                  # Pipeline de processamento
@@ -131,6 +135,19 @@ O DataFrame processado foi carregado em um banco MySQL para simular um pipeline 
 5. Validação com `SELECT COUNT(*)`
 
 ---
+
+
+## 🗄️ Estrutura do Banco de Dados
+
+O schema da tabela utilizada no projeto está disponível em:
+
+📁 database/schema.sql
+
+Execute o script antes de rodar o pipeline para garantir a criação da tabela no MySQL.
+
+
+---
+
 
 ## 📊 Dashboard Power BI
 
@@ -240,8 +257,12 @@ nba-data-analysis/
 ├── assets/
 │   └── dashboard_demo.mp4  
 │   └── dashboard.png
+│
 ├── data/
 │   └── nba_data_processed.csv       # Dataset
+│
+├── database/
+│   └── schema.sql
 │
 ├── src/
 │   └── analysis.py                  # Processing pipeline
@@ -313,6 +334,17 @@ The processed DataFrame was loaded into a MySQL database to simulate a productio
 3. Table cleared with `DELETE FROM nba_players`
 4. Bulk-inserted via `executemany`
 5. Row count validated with `SELECT COUNT(*)`
+
+
+---
+
+## 🗄️ Database Structure
+
+The schema for the table used in the project is available at:
+
+📁 database/schema.sql
+
+Execute the script before running the pipeline to ensure the table is created in MySQL.
 
 ---
 
